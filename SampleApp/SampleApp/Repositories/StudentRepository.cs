@@ -28,5 +28,10 @@ namespace SampleApp.Repositories
         {
             return _students.First(s => s.Name == name);
         }
+
+        public void Delete(string name)
+        {
+            _students.Remove(_students.First(s => s.Name == name));
+        }
     }
 }
