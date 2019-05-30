@@ -1,0 +1,10 @@
+﻿@using SampleApp.Models;
+
+@model IEnumerable<Student>
+<div>
+    <h1>Students List</h1>
+    @foreach(var student in Model)
+    {
+        <p>@student.Name</p>
+    }
+</div>
